@@ -104,6 +104,15 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
 }
 
 /**
+ * Select all second paragraphs within list items in the given element and add a class to them
+ */
+function decorateSecondParagraphs(element) {
+  element.querySelectorAll('li > p:nth-child(2)').forEach((p) => {
+    p.classList.add('nav-link-description');
+  });
+}
+
+/**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
  */
@@ -145,6 +154,7 @@ export default async function decorate(block) {
       });
     });
   }
+  decorateSecondParagraphs(navSections);
 
   // hamburger for mobile
   const hamburger = document.createElement('div');
@@ -156,8 +166,14 @@ export default async function decorate(block) {
   nav.prepend(hamburger);
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
+/*
   toggleMenu(nav, navSections, isDesktop.matches);
+*/
+  toggleMenu(nav, navSections, false);
+/*
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+*/
+  isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, false));
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
