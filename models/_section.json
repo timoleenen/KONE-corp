@@ -29,6 +29,11 @@
               "value": "highlight"
             }
           ]
+        },
+        {
+          "component": "text",
+          "name": "sectionId",
+          "label": "Section ID"
         }
       ]
     }
