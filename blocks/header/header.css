@@ -305,7 +305,7 @@ header nav .nav-sections .nav-drop[aria-expanded='true'] .nav-drop-container {
 		z-index: 10;
 	}
 
-	header nav .nav-sections .default-content-wrapper .submenu-close .sub-menu-close-button {
+	header nav .nav-sections .default-content-wrapper .submenu-close .submenu-close-button {
 		all: unset;
 		font-size: 1.5rem;
 		line-height: 3rem;
