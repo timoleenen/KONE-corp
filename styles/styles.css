@@ -136,6 +136,10 @@ h2 {
 	margin-bottom: 4rem;
 }
 
+h2:has(+ p) {
+	margin-bottom: 0;
+}
+
 h3 {
 	font-size: var(--heading-font-size-l);
 	line-height: 3rem;
