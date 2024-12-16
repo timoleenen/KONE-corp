@@ -525,6 +525,10 @@ function decorateSections(main) {
       sectionMeta.parentNode.remove();
     }
   });
+
+  main.querySelectorAll(':scope > div').forEach((section) => {
+    decorateSectionTitle(section);
+  });
 }
 
 /**
@@ -647,7 +651,6 @@ function decorateBlock(block) {
     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
     const section = block.closest('.section');
     if (section) {
-      decorateSectionTitle(section);
       section.classList.add(`${shortBlockName}-container`);
     }
     decorateButtons(block);
