@@ -18,8 +18,10 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --light-secondary-sand: #F3EEE6;
 
-  /* fonts */
+
+	/* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
@@ -254,7 +256,7 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: var(--light-secondary-sand);
   margin: 0;
   padding: 40px 0;
 }
