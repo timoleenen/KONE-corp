@@ -116,8 +116,8 @@
       },
       {
         "component": "text",
-        "name": "sectionTitle",
-        "label": "Section title"
+        "name": "sectionSubHeading",
+        "label": "Section subheading"
       }
     ]
   },

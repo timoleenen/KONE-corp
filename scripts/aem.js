@@ -474,7 +474,7 @@ function decorateIcons(element, prefix = '') {
  * @param section
  */
 function decorateSectionTitle(section) {
-  const title = section.dataset.sectiontitle;
+  const title = section.dataset.sectionSubHeading;
   if (title) {
     const sectionTitleDiv = document.createElement('div');
     const p = document.createElement('p');
