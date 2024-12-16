@@ -34,6 +34,11 @@
           "component": "text",
           "name": "sectionId",
           "label": "Section ID"
+        },
+        {
+          "component": "text",
+          "name": "sectionTitle",
+          "label": "Section title"
         }
       ]
     }
