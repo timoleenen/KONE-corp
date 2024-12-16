@@ -117,10 +117,10 @@ function buildSubMenuContainer(ulElement) {
     const linkInfoBlockDiv = document.createElement('div');
     linkInfoBlockDiv.classList.add('link-info-block', 'hide'); // TODO: add logic to show when parent link hovered
     const linkInfoTitleP = document.createElement('p');
-    linkInfoTitleP.classList.add('link-info-block__title');
+    linkInfoTitleP.classList.add('link-info-block-title');
     linkInfoTitleP.textContent = 'Link Title';
     linkInfoBlockDiv.append(linkInfoTitleP);
-    linkInfoTextP.classList.add('link-info-block__text');
+    linkInfoTextP.classList.add('link-info-block-text');
     linkInfoBlockDiv.append(linkInfoTextP);
     leftDiv.append(linkInfoBlockDiv);
   });
@@ -167,7 +167,7 @@ function buildSubMenuContainer(ulElement) {
   const subMenuCloseDiv = document.createElement('div');
   subMenuCloseDiv.classList.add('submenu-close');
   const subMenuCloseButton = document.createElement('button');
-  subMenuCloseButton.classList.add('submenu-close__button', 'icon-scroll_up');
+  subMenuCloseButton.classList.add('submenu-close-button', 'icon-scroll_up');
   subMenuCloseButton.ariaLabel = 'Close submenu';
   subMenuCloseDiv.append(subMenuCloseButton);
   subMenuContainerDiv.append(subMenuCloseDiv);

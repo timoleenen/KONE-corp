@@ -47,7 +47,7 @@
 [class^="icon-"],
 [class*=" icon-"]
 {
-	font-family: KONE-Icon-Font !important;
+	font-family: KONE-Icon-Font, sans-serif !important;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -59,6 +59,7 @@
 	font-size: 1rem;
 }
 
+/* stylelint-disable selector-class-pattern */
 .icon-kone-logo::before {content:'\e000';}
 .icon-elevator::before, .icon-quantity::before, .icon-elevator-2::before {content:'\e002';}
 .icon-elevator-sim::before, .icon-elevator-1::before {content:'\e003';}
@@ -229,7 +230,7 @@
 .icon-safety::before {content:'\e0aa';}
 .icon-greeting::before {content:'\e0ab';}
 .icon-tooltip::before {content:'\e0ac';}
-.icon-chat::before, .icon-message::before, .icon-mail::before, .icon-live-chat::before, con-message-1::before {content:'\e0ad';}
+.icon-chat::before, .icon-message::before, .icon-mail::before, .icon-live-chat::before {content:'\e0ad';}
 .icon-message::before, .icon-mail::before {content:'\e0ae';}
 .icon-home::before, .icon-wide-arrow-up::before {content:'\e0b0';}
 .icon-residence::before {content:'\e0b1';}
@@ -364,7 +365,7 @@
 .icon-like::before {content:'\e133';}
 .icon-drawing-tools::before, .icon-tool::before {content:'\e134';}
 .icon-scale::before {content:'\e135';}
-.icon-controls::before, .icon-KONE_Icon_Control_Location::before, con-settings-1::before {content:'\e136';}
+.icon-controls::before, .icon-KONE_Icon_Control_Location::before {content:'\e136';}
 .icon-create-case::before {content:'\e137';}
 .icon-briefcase::before, .icon-briefcase-1::before {content:'\e138';}
 .icon-folder::before {content:'\e139';}
@@ -667,3 +668,4 @@
 .icon-mass-update-old::before {content:'\e266';}
 .icon-exit-figure::before {content:'\e267';}
 .icon-no-oil::before {content:'\e269';}
+/* stylelint-enable selector-class-pattern */

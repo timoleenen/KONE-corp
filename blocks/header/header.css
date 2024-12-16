@@ -255,7 +255,6 @@ header nav .nav-sections .nav-drop[aria-expanded='true'] .nav-drop-container {
 
 	header nav .nav-sections .default-content-wrapper > ul > li {
 		flex: 0 1 auto;
-		//position: relative;
 	}
 
 	header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -306,7 +305,7 @@ header nav .nav-sections .nav-drop[aria-expanded='true'] .nav-drop-container {
 		z-index: 10;
 	}
 
-	header nav .nav-sections .default-content-wrapper .submenu-close .submenu-close__button {
+	header nav .nav-sections .default-content-wrapper .submenu-close .sub-menu-close-button {
 		all: unset;
 		font-size: 1.5rem;
 		line-height: 3rem;
@@ -326,7 +325,7 @@ header nav .nav-sections .nav-drop[aria-expanded='true'] .nav-drop-container {
 		z-index: 10;
 	}
 
-	header nav .nav-sections .default-content-wrapper .submenu .link-info .link-info-block__title {
+	header nav .nav-sections .default-content-wrapper .submenu .link-info .link-info-block-title {
 		font-size: 1.25rem;
 		line-height: 2rem;
 		margin-bottom: 1rem;
@@ -335,7 +334,7 @@ header nav .nav-sections .nav-drop[aria-expanded='true'] .nav-drop-container {
 		hyphens: auto;
 	}
 
-	header nav .nav-sections .default-content-wrapper .submenu .link-info .link-info-block__text {
+	header nav .nav-sections .default-content-wrapper .submenu .link-info .link-info-block-text {
 		font-size: 1rem;
 		line-height: 1.5rem;
 		margin-bottom: 0;
