@@ -38,7 +38,7 @@
 @font-face {
 	font-family: KONE-Icon-Font;
 	src: local('KONE-Icon-Font');
-	src:  url('/fonts/KONE-Icon-Font-new.woff2') format('woff2');
+	src:  url('../fonts/KONE-Icon-Font-new.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
