@@ -195,7 +195,7 @@ function readBlockConfig(block) {
       if (cols[1]) {
         const col = cols[1];
         const name = toClassName(cols[0].textContent);
-        let value = '';
+        let value;
         if (col.querySelector('a')) {
           const as = [...col.querySelectorAll('a')];
           if (as.length === 1) {
@@ -470,6 +470,22 @@ function decorateIcons(element, prefix = '') {
 }
 
 /**
+ * If section has 'sectiontitle' data element, create a title element and prepend it to the section.
+ * @param section
+ */
+function decorateSectionTitle(section) {
+  const title = section.dataset.sectiontitle;
+  if (title) {
+    const sectionTitleDiv = document.createElement('div');
+    const p = document.createElement('p');
+    p.classList.add('section-title');
+    p.textContent = title;
+    sectionTitleDiv.append(p);
+    section.prepend(sectionTitleDiv);
+  }
+}
+
+/**
  * Decorates all sections in a container element.
  * @param {Element} main The container element
  */
@@ -630,8 +646,10 @@ function decorateBlock(block) {
     const blockWrapper = block.parentElement;
     blockWrapper.classList.add(`${shortBlockName}-wrapper`);
     const section = block.closest('.section');
-    if (section) section.classList.add(`${shortBlockName}-container`);
-    // eslint-disable-next-line no-use-before-define
+    if (section) {
+      decorateSectionTitle(section);
+      section.classList.add(`${shortBlockName}-container`);
+    }
     decorateButtons(block);
   }
 }
@@ -688,6 +706,7 @@ async function waitForFirstImage(section) {
 /**
  * Loads all blocks in a section.
  * @param {Element} section The section element
+ * @param loadCallback
  */
 
 async function loadSection(section, loadCallback) {

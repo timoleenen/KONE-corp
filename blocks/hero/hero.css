@@ -13,7 +13,7 @@
 
 .hero h1 {
 	max-width: 1200px;
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
 	color: var(--background-color);
 	font-size: 4.5rem;
