@@ -132,6 +132,47 @@
         "multi": false
       },
       {
+        "component": "select",
+        "name": "icon",
+        "value": "",
+        "label": "Highlight icon",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "elevator",
+            "value": "icon-elevator"
+          },
+          {
+            "name": "personas",
+            "value": "icon-personas"
+          },
+          {
+            "name": "service",
+            "value": "icon-service"
+          },
+          {
+            "name": "location_pin",
+            "value": "icon-location_pin"
+          },
+          {
+            "name": "location_pin",
+            "value": "icon-location_pin"
+          },
+          {
+            "name": "professionals_technicians",
+            "value": "icon-professionals_technicians"
+          },
+          {
+            "name": "arrow_up",
+            "value": "icon-arrow_up"
+          }
+        ]
+      },
+      {
         "component": "richtext",
         "name": "text",
         "value": "",
